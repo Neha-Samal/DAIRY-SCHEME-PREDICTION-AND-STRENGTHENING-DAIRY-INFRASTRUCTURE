@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Connect</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="static/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="static/css/custom.css" rel="stylesheet">
+    <link href="static/css/customtemp.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav conn-siderbar sidebar sidebar-dark accordion conn-uls" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-start justify-content-start connect-logo" href="index.html">
+                <div class="sidebar-brand-icon connect-logo">
+                    <img src="static/img/logo.svg" alt="connect">
+                </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+           
+            <li class="nav-item active">
+                <a class="nav-link" href="dairycattle">
+                    <img src="static/img/cattle.svg" alt="">
+                    <span>Milk Procurement</span></a>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="dairyfarmer">
+                    <img src="static/img/grps.svg" alt="">
+                    <span>Farmers</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="dairyassets">
+                    <img src="static/img/grps.svg" alt="">
+                    <span>Assets </span></a>
+            </li>
+
+            
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="dairymarketing">
+                    <img src="static/img/marketing.svg" alt="">
+                    <span>Product Marketing</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">
+                    <img src="static/img/logout.svg" alt="">
+                    <span>Sign Out</span></a>
+            </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <!-- <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button> -->
+
+                    <!-- Topbar Search -->
+                    <!-- <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group search-topbar">
+                            <i class="fas fa-search fa-sm"></i>
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search..." aria-label="Search" aria-describedby="basic-addon2">
+                        </div>
+                    </form> -->
+
+                    <!-- Topbar Navbar -->
+                    <!-- <ul class="navbar-nav ml-auto"> -->
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <!-- <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a> -->
+                            <!-- Dropdown - Messages -->
+                            <!-- <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                         <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">EN 
+                                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.49193 4.99998C4.57586 5.00063 4.65909 4.985 4.73675 4.954C4.81441 4.92301 4.88495 4.87726 4.94426 4.81944L8.82978 1.03699C8.94181 0.920097 9.0028 0.765413 8.9999 0.605577C8.997 0.44574 8.93043 0.293251 8.81424 0.180283C8.69805 0.0673156 8.54132 0.00270454 8.37712 8.28711e-05C8.21293 -0.0025388 8.05411 0.0570342 7.93417 0.166232L4.49193 3.51386L1.04969 0.169534C0.928962 0.0669506 0.772771 0.0127389 0.612606 0.0178277C0.452441 0.0229165 0.300214 0.0869271 0.186614 0.196956C0.0730133 0.306984 0.0064883 0.454848 0.000449944 0.610736C-0.00558841 0.766625 0.049309 0.918945 0.154075 1.03699L4.0396 4.81944C4.09891 4.87726 4.16945 4.92301 4.24711 4.954C4.32477 4.985 4.408 5.00063 4.49193 4.99998V4.99998Z" fill="#9299B8"/>
+                                    </svg>
+                                </span>
+                            </a> -->
+                            <!-- Dropdown - User Information -->
+                            <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    EN
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    SM
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    HN
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    VN
+                                </a>
+                            </div>
+                        </li>
+
+                         <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/notification.svg" alt=""> -->
+                                <!-- Counter - Messages -->
+                                <!-- <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                        </li> -->
+
+                        <!-- Nav Item - Alerts -->
+                        <!-- <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/profile.svg" alt="">
+                            </a>
+                        </li>
+
+                    </ul> -->
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 page-titles"><img class="backarrows" src="static/img/backs.svg" alt=""> Milk Procurement </h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm prim-btns btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Add Cattle </a>
+                    </div>
+
+                    <!-- Form -->
+
+                    <div>
+                        <div>
+
+                    <div>
+                        
+                    
+                        <form class="w3-container w3-margin" action="" method="post" enctype="multipart/form-data">
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header text-center">
+                              <h4 class="modal-title w-100 font-weight-bold">Add Cattle Details</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="modal-body mx-3">
+                                                      
+                      
+                             <div class="md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="orangeForm-pass">Date</label>
+                                <input type="text" id="orangeForm-email" name="date" class="form-control validate">
+                               
+                              </div>
+
+                              <div class="md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="orangeForm-pass">Avg. cow milk production</label>
+                                <input type="text" id="orangeForm-email" name="cowmilk" class="form-control validate">
+                               
+                              </div>
+                              <div class="md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="orangeForm-pass">Avg. Buffalo milk production</label>
+                                <input type="text" id="orangeForm-email" name="buffalomilk" class="form-control validate">
+                               
+                              </div>
+
+          
+
+                              
+                              <div class="modal-footer d-flex justify-content-center">
+                                <button type="submit" name="sub" value="Submit" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm prim-btns btn btn-info btn-lg" > Add</button>
+                              </div>
+                            </div>
+                        </form>
+                          </div>
+                        </div>
+                    </div>
+
+                          <!-- Form END -->
+
+
+                    <!-- Content Row -->
+                    
+
+                    <div class="row">
+
+                        
+
+                        <!-- Area Chart -->
+                        <div class="col-md-12">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <div class="table-srch">
+                                        <img src="static/img/search-icon.svg" alt="">
+                                        <input type="text" name="" placeholder="Search Order">
+                                    </div>
+
+                                    <!-- <div class="tabl-right-filter">
+                                        <span>Sort by:</span>
+                                        <select name="Monthly" id="Monthly">
+                                            <option value="Monthly">Yearly</option>
+                                            <option value="Monthly">Monthly</option>
+                                            <option value="Monthly">Weekly</option>
+                                            <option value="Monthly">Daily</option>
+                                        </select>
+                                        <a href="#">
+                                            <img src="img/filter.svg" alt="">
+                                        </a>
+                                    </div> -->
+
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body prim-tab-card">
+                                    <div class="prim-table filter-tables">
+                                        <table>
+                                            <tr class="all-order-th">
+                                
+                                                <th>
+                                                    Date
+                                                </th>
+                                                <th>
+                                                    Cow Milk Yield
+                                                </th>
+                                                <th>
+                                                    Buffalo Milk Yield
+                                                </th>
+                                                
+                                            </tr>
+
+                                            <div class="col-md-10">                                               
+                                                {% for table in tables %}                                          
+                                                {{ table|safe }}
+                                                {% endfor %}
+                                            </div>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-right my-auto">
+                        <a href="#">About</a>
+                        <a href="#">Team</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="static/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="static/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="static/js/demo/chart-area-demo.js"></script>
+    <script src="static/js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
